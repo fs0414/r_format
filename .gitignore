@@ -15,3 +15,11 @@ target/
 
 # rspec failure tracking
 .rspec_status
+
+**/*.rs.bk
+/ext/*/target/
+/ext/*/Cargo.lock
+
+# Development
+.rspec_status
+.rake_tasks~

@@ -40,4 +40,16 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
+
+  spec.files = Dir[
+    "lib/**/*",
+    "ext/**/*.{rb,rs,toml}",
+    "Cargo.toml",
+    "Cargo.lock",
+    "README.md",
+    "LICENSE.txt",
+    "CHANGELOG.md"
+  ]
+  spec.require_paths = ["lib"]
+  spec.extensions = ["ext/r_format/extconf.rb"]
 end
